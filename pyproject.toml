@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ECGJev"
+version = "0.1.0"
+description = "ECGJev: dual-view ECG fusion, descriptor alignment, and fixed-option decision tuning."
+requires-python = ">=3.12"
+dependencies = [
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "transformers==5.19.0",
+    "peft==0.21.2",
+    "accelerate==1.15.0",
+    "pillow>=10",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ecgjev.models.decoder" = ["LICENSE.StartLux-Decision"]

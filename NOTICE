@@ -1,0 +1,15 @@
+ECGJev core code release
+
+The files model.py and jevfmt.py under
+src/ecgjev/models/decoder/startlux_decision/ are adapted from
+StartLuxLabs/StartLux-Decision startlux_decision/model.py and
+startlux_decision/jevfmt.py. The upstream inference code is licensed under
+the Apache License, Version 2.0. A copy is included at:
+
+    src/ecgjev/models/decoder/LICENSE.StartLux-Decision
+
+ECGJev modifications include device placement, detached option-letter
+readout weights, a configurable shared-prefix gate, and removal of source
+comments and docstrings.
+
+Pretrained model weights are distributed separately under their own terms.
